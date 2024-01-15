@@ -1,0 +1,50 @@
+:root {
+    /*fonts*/
+    --ff-default: "Poppins", sans-serif;
+    --ff-interactive: "Source Serif 4", serif;
+
+    --fw-thin: 300;
+    --fw-normal: 400;
+    --fw-bold: 600;
+
+    --fs-small: 0.9rem;
+    --fs-normal: 1.2rem;
+    --fs-large: 2.4rem;
+    --fs-big: 4.8rem;
+    --fs-giant: 7rem;
+    /*fonts*/
+
+    /*colors*/
+    --c-dark-default: hsl(45°, 0%, 20%);
+    --c-dark-accent: hsl(0°, 0%, 25%);
+
+    --c-light-default: hsl(0°, 0%, 80%);
+    --c-light-accent: hsl(0°, 0%, 90%);
+
+    --c-highlight-1: hsl(340°, 85%, 55%);
+    --c-highlight-2: hsl(290°, 85%, 55%);
+    --c-highlight-3: hsl(210°, 85%, 55%);
+    --c-highlight-4: hsl(140°, 85%, 55%);
+    --c-highlight-5: hsl(40°, 85%, 55%);
+    /*colors*/
+}
+
+::selection {
+    filter: drop-shadow(1px 1px var(--c-highlight-1));
+}
+
+body {
+    background-color: var(--c-dark-default);
+    color: var(--c-light-default);
+    font-family: var(--ff-default);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-small);
+}
+
+:where(a, button, input, form, textarea) {
+    font-family: var(--ff-interactive);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+    font-weight: var(--fw-bold);
+}

@@ -1,0 +1,8 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "Portfolio francoandre.dev",
+    "short_name": "francoandre.dev",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "A personal portfolio web"
+}
