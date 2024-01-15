@@ -1,4 +1,6 @@
-# Qwik City App ⚡️
+# Portfolio Web 💼
+
+## Qwik City App ⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
 - [Discord](https://qwik.builder.io/chat)
@@ -12,16 +14,38 @@
 
 This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
 
-Inside your project, you'll see the following directory structure:
+Inside the project, you'll see the following directory structure:
 
 ```
 ├── public/
 │   └── ...
 └── src/
+    ├── assets/
+    │   └── ...
     ├── components/
     │   └── ...
-    └── routes/
-        └── ...
+    ├── docs/
+    │   └── ...
+    ├── lib/
+    │   └── ...
+    ├── loaders/
+    │   └── ...
+    ├── middlewares/
+    │   └── ...
+    ├── modules/
+    │   └── ...
+    ├── pages/
+    │   └── ...
+    ├── routes/
+    │    └── ...
+    ├── styles/
+    │   └── ...
+    ├── tests/
+    │   └── ...
+    ├── types/
+    │   └── ...
+    ├── utils/
+    │   └── ...
 ```
 
 - `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
