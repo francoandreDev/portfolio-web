@@ -28,8 +28,8 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/*.code-snippets
 
-#documentation
-src/docs/*
+#documentation only in prod I will ignore this
+#src/docs/*
 
 .idea
 .DS_Store

@@ -1,0 +1,7 @@
+{
+    "main": "The source for production, stable branch",
+    "dev": "Source code in development, last realease",
+    "hotfix": "Point in main that need or end with a urgent feat to fix",
+    "release": "From develop, the next version, may include features, fixes, docs",
+    "feature": "Develop the new feature"
+}
