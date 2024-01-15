@@ -4,13 +4,6 @@ I'm a developer focused on the front-end of the web.
 I have been studying programming for +4 years.
 My main languages are JavaScript and TypeScript, but I also know HTML5, CSS3, Tailwind, CSS Modules, TDD using Vitest, Node, Python, C#, SQL.
 
-## Docs⚡️
-
--   [Qwik Docs](https://qwik.builder.io/)
--   [Vite](https://vitejs.dev/)
-
----
-
 ## Project Structure
 
 This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
@@ -88,3 +81,10 @@ The production build will generate client and server modules by running both cli
 ```shell
 npm run build # or `yarn build`
 ```
+
+## Extra Docs⚡️
+
+-   [Qwik Docs](https://qwik.builder.io/)
+-   [Vite](https://vitejs.dev/)
+
+---
