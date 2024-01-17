@@ -1,0 +1,12 @@
+Put the content in HTML basic format
+
+- Upload an image.
+- Create and use brand.
+- Write 2 texts: Summary role text and about me.
+- Add projects section.
+- Create a mini form.
+- Add button to github, linkedin, cv.
+- Build my tech stack zone.
+- Reserve an area for my jobs.
+- Main objectives
+- Integrate a formation
