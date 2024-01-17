@@ -1,0 +1,21 @@
+.inline {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2%;
+}
+
+.brand-font {
+    line-height: 1.5;
+    font-family: var(--ff-interactive);
+}
+
+.letter {
+    --shadow-away: 0.5px;
+    --multiply-by: 1.5;
+    color: transparent;
+    text-shadow:
+        var(--shadow-away) var(--shadow-away) var(--c-highlight-3),
+        calc(var(--shadow-away) * var(--multiply-by))
+            calc(var(--shadow-away) * var(--multiply-by)) var(--c-highlight-1);
+}
