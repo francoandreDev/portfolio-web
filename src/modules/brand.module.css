@@ -10,12 +10,37 @@
     font-family: var(--ff-interactive);
 }
 
+.selection::selection {
+    transition: filter 1s linear;
+    filter: saturate(1.9) brightness(1.9) contrast(1.9);
+}
+
 .letter {
-    --shadow-away: 0.5px;
-    --multiply-by: 1.5;
-    color: transparent;
-    text-shadow:
-        var(--shadow-away) var(--shadow-away) var(--c-highlight-3),
-        calc(var(--shadow-away) * var(--multiply-by))
-            calc(var(--shadow-away) * var(--multiply-by)) var(--c-highlight-1);
+    transition:
+        color 1s ease,
+        opacity 0.2s linear;
+}
+
+.letter-red {
+    color: var(--c-highlight-1);
+}
+.letter-purple {
+    color: var(--c-highlight-2);
+}
+.letter-blue {
+    color: var(--c-highlight-3);
+}
+.letter-green {
+    color: var(--c-highlight-4);
+}
+.letter-gold {
+    color: var(--c-highlight-5);
+}
+
+.show {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
 }
