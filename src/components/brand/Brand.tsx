@@ -29,7 +29,10 @@ export default component$(() => {
     });
 
     return (
-        <div onClick$={() => toggleShow()} class={brandStyle["col-center"]} style={{ cursor: "pointer", position: "relative" }}>
+        <div
+            onClick$={() => toggleShow()}
+            class={`${brandStyle["col-center"]} ${brandStyle.active}`}
+        >
             <OuterBrand show={!showInnerBrand.value} showText={showText.value} moveX={moveX.value} />
             <InnerBrand show={showInnerBrand.value} />
         </div>

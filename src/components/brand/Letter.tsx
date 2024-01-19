@@ -40,6 +40,10 @@ export default component$(({ letter, sTime }: { letter: string, sTime: number })
 
 
     return (
-        <div class={`${brandStyles.letter} ${brandStyles["brand-font"]} ${classVisible.value} ${classColor.value}`}>{letter}</div>
+        <div
+            class={`${brandStyles.letter} ${brandStyles["brand-font"]} ${classVisible.value} ${classColor.value}`}
+        >
+            {letter}
+        </div>
     );
 });
