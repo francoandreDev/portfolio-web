@@ -20,6 +20,11 @@ export default component$(({ letter, sTime }: { letter: string, sTime: number })
         classColor.value = brandStyles[`letter-${colorsList[indexColors.value]}`]
     });
 
+    const setFinalColor = $(() => {
+        indexColors.value = 0
+        classColor.value = brandStyles["letter-final"]
+    })
+
     // eslint-disable-next-line qwik/no-use-visible-task
     useVisibleTask$(async () => {
         setTimeout(() => {
@@ -28,7 +33,7 @@ export default component$(({ letter, sTime }: { letter: string, sTime: number })
             const interval = setInterval(() => {
                 changeColor()
                 rep++
-                if (rep > totalReps) clearInterval(interval)
+                if (rep > totalReps) { clearInterval(interval); setFinalColor() }
             }, 2 * seconds)
         }, sTime * seconds)
     });

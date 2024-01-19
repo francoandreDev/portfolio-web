@@ -1,18 +1,37 @@
-import { component$ } from '@builder.io/qwik';
+import { $, component$, useSignal } from '@builder.io/qwik';
+import { InnerBrand, OuterBrand } from './exports.ts';
 
-import brandStyles from "../../modules/brand.module.css"
+import brandStyle from "~/modules/brand.module.css"
 
-const nameBrand: string = "franco.dev"
-import { Letter } from './exports.ts';
+const minMoveX: number = 0
+const maxMoveX: number = 100
 
-export default component$(({ id }: { id: unknown }) => {
+export default component$(() => {
+    const showInnerBrand = useSignal<boolean>(false);
+    const showText = useSignal<boolean>(true);
+
+    const moveX = useSignal<number>(minMoveX);
+
+    const setMoveX = $(() => {
+        moveX.value = moveX.value === minMoveX ? maxMoveX : minMoveX
+
+        if (moveX.value === maxMoveX) {
+            setTimeout(() => { moveX.value = minMoveX }, 1500)
+        }
+    });
+
+    const toggleShow = $(() => {
+        setMoveX()
+        setTimeout(() => {
+            showInnerBrand.value = !showInnerBrand.value
+        }, 1000)
+        showText.value = !showText.value
+    });
+
     return (
-        <span class={`${brandStyles.inline} ${brandStyles.selection}`}>
-            {nameBrand.split("").map((letter: string, index: number) => {
-                const timeAppear = index / 3
-                const keyLetter = "" + id + index + letter
-                return (<Letter letter={letter} sTime={timeAppear} key={keyLetter} />);
-            })}
-        </span>
+        <div onClick$={() => toggleShow()} class={brandStyle["col-center"]} style={{ cursor: "pointer", position: "relative" }}>
+            <OuterBrand show={!showInnerBrand.value} showText={showText.value} moveX={moveX.value} />
+            <InnerBrand show={showInnerBrand.value} />
+        </div>
     );
 });

@@ -37,10 +37,39 @@
     color: var(--c-highlight-5);
 }
 
-.show {
+.letter-final {
+    color: var(--c-light-default);
+}
+
+.move {
+    transition: left 1s cubic-bezier(0.75, 0.06, 1, 0.82);
+    position: relative;
+}
+
+.move-to-left {
+    left: -32px;
+}
+
+.move-to-right {
+    left: 32px;
+}
+
+.move-return {
+    left: 0;
+}
+
+.appear {
+    transition: opacity 0.5s linear 0.2s;
     opacity: 1;
 }
 
-.hidden {
+.disappear {
+    transition: opacity 0.5s linear;
     opacity: 0;
+}
+.col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
