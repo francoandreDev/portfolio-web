@@ -1,10 +1,14 @@
 import { component$ } from '@builder.io/qwik';
-import { Brand } from '~/components/brand/exports.ts';
+import { Image } from '@/components/image/exports.ts';
+import type {PublicPath} from "@/types/exports.ts"
 
 export default component$(() => {
+
+    const imagePath: PublicPath = "assets/image.webp"
+
     return (
         <>
-            <Brand />
+            <Image imageURL={imagePath} shape='circle'/>
         </>
     );
 });

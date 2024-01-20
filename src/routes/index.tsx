@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { WelcomePage } from "~/pages/exports";
+import { WelcomePage } from "@/pages/exports.ts";
 
 export default component$(() => {
   return (

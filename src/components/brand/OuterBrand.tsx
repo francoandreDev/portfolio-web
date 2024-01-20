@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 
-import brandStyles from '~/modules/brand.module.css'
+import brandStyles from '@/modules/brand.module.css'
 
 export default component$(({ show, showText, moveX }: { show: boolean, showText: boolean, moveX: number }) => {
 

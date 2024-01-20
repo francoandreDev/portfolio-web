@@ -1,7 +1,7 @@
 import { component$, useSignal, useTask$ } from '@builder.io/qwik';
 import { Letter } from './exports.ts';
 
-import brandStyles from "~/modules/brand.module.css"
+import brandStyles from "@/modules/brand.module.css"
 
 const nameBrand: string = "{franco.dev}"
 const delayBy: number = 750

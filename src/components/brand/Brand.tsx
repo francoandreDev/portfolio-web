@@ -1,7 +1,7 @@
 import { $, component$, useSignal } from '@builder.io/qwik';
 import { InnerBrand, OuterBrand } from './exports.ts';
 
-import brandStyle from "~/modules/brand.module.css"
+import brandStyle from "@/modules/brand.module.css"
 
 const minMoveX: number = 0
 const maxMoveX: number = 100
