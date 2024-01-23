@@ -1,3 +1,3 @@
-import type { PublicPath, ShapeStyle } from "./image.d.ts";
+import type { PublicPath, ShapeStyle, RefT } from "./image.d.ts";
 
-export { PublicPath, ShapeStyle };
+export { PublicPath, ShapeStyle, RefT };
