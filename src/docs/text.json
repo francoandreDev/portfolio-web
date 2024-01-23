@@ -3,25 +3,15 @@
     "projects": "Entre mis principales proyectos puedo destacar los siguientes:",
     "objectives": {
         "goals": [
-            "1. Hacer un portfolio super escalable y mantenible para usar siempre con relativa facilidad",
-            "2. Hacer un E-commerce desde el diseño hasta la base de datos",
-            "3. Crea tu primera herramienta de productividad web",
-            "4. Crea un juego web con Threejs",
-            "5. Conseguir mi primer trabajo"
-        ],
-        "growing": [
-            "1. Dominar el Front-end web",
-            "2. Dominar el Back-end web",
-            "3. Aprender y dominar Big Data",
-            "4. Crear un nuevo tipo de página web",
-            "5. Ser capaz de trabajar en el equipo de una gran empresa"
+            "1. Crea tu primera herramienta de productividad web",
+            "2. Crea un juego web con Threejs",
+            "3. Conseguir mi primer trabajo"
         ]
     },
     "jobs": "",
     "about": [
-        "Cuando estaba en la secundaria tuve un primer acercamiento con este mundo de la programación a través de videos de yt, en aquellos tiempos todo mi gusto fue por aprender teoría básica a base de tutoriales, no contaba con una computadora donde llevar todo lo que aprendía a la práctica. Pero, intentaba usar mi cerebro para compensar un poco.",
-        "Más adelante en mi vida entré a la universidad y ya con una computadora, aunque vieja me adentré a la práctica con Pseint, y luego c++ en Zinjai, con esto desarrollé ideas más sólidas de lo que era programar y descubrí que podría pasar horas en ello y disfurtarlo, pero también empezaba a ver que el programar podría ser tedioso.",
-        "Luego aprendí C# y Java aún en la universidad, en esos dos lenguajes aprendí POO, y Windows Forms a nivel básico, poco después me llamó la atención el desarrollo web y me metí de cabeza a ello, actualmente aún sigo aprendiendo; hasta la fecha estoy comenzando a adentrarme en BBDD, diseño, estructura de datos, algoritmos y metodologías de desarrollo",
-        "Fuera de los aspectos más técnicos, me gusta conversar cualquier día y a cualquier hora con quien sea de algún tema relacionado a mi carrera y como mejorar. Realmente lo disfruto demasiado, soy más el tipo de persona que puede perder la noción del tiempo si eso implica hacer un mejor trabajo."
+        "Soy ligeramente perfeccionista debido a que constantemente intento pensar en si pude mejorar algo en mi trabajo, si ya lo hice completamente bien, si es una solución factible, si es eficaz, etc.",
+        "Estoy dispuesto a siempre conversar con otros para mejorar o ayudar y disfruto mucho los momentos de aprendizaje",
+        "En un futuro me gustaría estar especializado a fondo en front-end web y big data, me llama mucho la atención la información y las posibilidades"
     ]
 }
